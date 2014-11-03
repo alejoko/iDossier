@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>TR JS Test</title>
+		<link rel="stylesheet" href="css/provided/bootstrap.min.css">
+		<link rel="stylesheet" href="css/provided/world.css">        
+	</head>
+	<body>
+		<div class="hero-unit">		
+			<h1>Welcome to iDossier</h1>
+		</div>
+		<section id="companyListWidget">
+			<div class="world" id="world">
+				<div class="company"><span class="name">Example Company Name</span>
+					<ul class="assets">
+						<li>Example Asset</li>
+					</ul>
+				</div>
+				<div class="company public"><span class="name">Example Company Name</span>
+					<ul class="assets">
+						<li>Example Asset</li>
+					</ul>
+				</div>
+				<div class="company bankrupt"><span class="name">Example Company Name</span>
+					<ul class="assets">
+						<li>Example Asset</li>
+					</ul>
+				</div>
+			</div>
+			<ul class="controls">
+				<li>
+					<label for="nameInput">Create New Private Company</label>
+					<div class="input-append">
+						<input id="nameInput" placeholder="Business Name" size="16" type="text">
+						<button class="btn btn-inverse" id="createCompanyBtn" type="button">Create!</button>
+					</div>
+				</li>
+				<li>
+					<label>Bankrupt a random Company</label>
+					<button class="btn btn-inverse" id="bankruptBtn" type="button">Bankrupt Company</button>
+				</li>
+				<li>
+					<label>Add a product to a random private Company</label>
+					<button class="btn btn-inverse" id="addProductBtn" type="button">Add Product</button>
+				</li>
+				<li>
+					<label>Float a private Company</label>
+					<p>Pick a random Private Company and change it to a Public  company.</p>
+					<button class="btn btn-inverse" id="floatRandomBtn" type="button">Float Random Private Company</button>
+				</li>
+				<li>
+					<label>Encourage Mergers between Public Floated Companies</label>
+					<button class="btn btn-inverse" id="encourageMergersBtn" type="button">Encourage Mergers</button>
+				</li>
+			</ul>
+		</section>
+		<script data-main="js/main" type="text/javascript" src="js/vendor/require.js"></script>
+	</body>
+</html>
